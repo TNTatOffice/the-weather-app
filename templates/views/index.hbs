@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="/web-server/public/img/favicon.png">
+    <title>Weather App</title>
+  </head>
+  <body>
+    {{>header}}
+    <div id="main-section">
+      <h1>{{title}}</h1>
+    <div class="content-container">
+    <form>  
+      <h3>Enter your location</h3>
+      <input type="text" placeholder="Location">
+      <button>Submit</button>
+    </form>
+    <p id="userAddress"></p>
+    <p id="userWeather"></p>
+</div>
+</div>
+{{>footer}}
+{{!-- Executing app.js script at the end --}}
+<script src="/js/app.js"></script>
+  </body>
+</html>
